@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+  --pink: #EF1649;
+  --purple: #151337;
+  --grey:#F5F5F5;
+  --textGrey:#7E8287;
+  --blue:#1090d0
+  ;
+--textPurple: #292751;
+--lightblue: #F1F8FC;
+--lightpink: #FEF1F4;
+--homegrey:#535353;
+--homeblack: #333333;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.smooth1{
+transition: 0.1s all ease;
+}
+
+.smooth3{
+transition: 0.3s all ease;
+}
+
+.smooth5{
+transition: 0.5s all ease;
+}
